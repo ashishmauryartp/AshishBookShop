@@ -1,0 +1,37 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build / compiled files
+build/
+target/
+bin/
+*.class
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Packaged build artifacts
+*.war
+*.ear
+
+# JDBC / third-party binary dependencies
+*.jar

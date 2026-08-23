@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f8fc;
+    color: #16253d;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main navigation bar */
+.site-nav {
+    background: linear-gradient(90deg, #061d46, #0d3d86);
+}
+
+/* Website brand */
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+/* Navigation links */
+.site-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.site-nav .nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Main hero section */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background:radial-gradient(circle at 85% 20%,rgba(41, 105, 225, 0.12),transparent 28%),
+        		linear-gradient(135deg,#ffffff,#f3f7ff);
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: #10254a;
+}
+
+.hero h1 span {
+    color: #0d3d86;
+}
+
+.hero p {
+    font-size: 1.08rem;
+    color: #56657b;
+    max-width: 620px;
+}
+
+.book-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    /* Keep complete image visible */
+    object-fit: contain;
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s ease;
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-weight: 800;
+}
+
+/* Common design for cards */
+.feature-card, .auth-card, .dashboard-card, .table-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(8, 40, 95, 0.10);
+}
+
+/* Feature card design */
+.feature-card {
+    height: 100%;
+    padding: 28px;
+    text-align: center;
+}
+
+
+/* Circular icon used inside cards */
+.feature-icon, .dash-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* Center icon */
+    display: grid;
+    place-items: center;
+    /* Put icon in center horizontally */
+    margin: 0 auto 14px;
+    background: #edf3ff;
+    color: #08285f;
+    font-size: 1.5rem;
+}
+
+.about-header {
+    padding: 80px 0;
+    background:linear-gradient(135deg,#061d46,#0d3d86);
+    color: #ffffff;
+}
+
+.about-header h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    font-size: 1.1rem;
+    color: #dbe7fa;
+    margin-bottom: 0;
+}
+
+.about-book-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 55px 30px;
+    box-shadow:0 10px 30px rgba(8, 40, 95, 0.10);
+}
+
+.about-book-box i {
+    font-size: 6rem;
+    color: #08285f;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.about-book-box h3 {
+    font-weight: 800;
+    color: #16253d;
+}
+
+.about-book-box p {
+    color: #6c7a90;
+    margin-bottom: 0;
+}
+
+.mission-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow:0 10px 30px rgba(8, 40, 95, 0.10);
+}
+
+.mission-card > i {
+    font-size: 3rem;
+    color: #15965a;
+}
+
+.mission-card p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.info-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    height: 100%;
+    box-shadow:0 10px 30px rgba(8, 40, 95, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 15px 35px rgba(8, 40, 95, 0.15);
+}
+
+.info-card > i {
+    font-size: 1.5rem;
+    color: #08285f;
+    background: #edf3ff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.info-card h5 {
+    color: #16253d;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.info-card p {
+    color: #6c7a90;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.info-card a {
+    color: #0d3d86;
+    font-weight: 500;
+}
+
+.info-card a:hover {
+    color: #15965a;
+    text-decoration: underline;
+}
+
+/* Bootstrap primary button */
+.btn-primary {
+    background: #08285f;
+    border-color: #08285f;
+}
+
+.btn-primary:hover {
+    background: #061c43;
+    border-color: #061c43;
+}
+
+/* Bootstrap success button */
+.btn-success {
+    background: #15965a;
+    border-color: #15965a;
+}
+
+/* Main area of login/register page */
+.auth-wrap {
+    min-height: calc(100vh - 68px);
+    display: flex;
+    align-items: center;
+    padding: 45px 0;
+}
+
+
+/* Login/Register card */
+.auth-card {
+    width: 100%;
+    max-width: 620px;
+    margin: auto;
+    padding: 34px;
+}
+
+.auth-icon {
+    font-size: 2.5rem;
+    color: #08285f;
+}
+
+/* Input box design */
+.form-control {
+    border-radius: 10px;
+    border-color: #d8e1ec;
+    padding: 0.72rem 0.9rem;
+}
+
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #6e94d3;
+    /* Blue shadow around input */
+    box-shadow:0 0 0 0.2rem rgba(13, 61, 134, 0.10);
+}
+
+/* Dashboard main wrapper */
+.dashboard {
+    min-height: calc(100vh - 68px);
+}
+
+/* Dashboard sidebar */
+.sidebar {
+    min-height: calc(100vh - 68px);
+    background: #061d46;
+    padding: 20px 12px;
+}
+
+.sidebar .nav-link {
+    color: #dbe7fa;
+    border-radius: 10px;
+    padding: 11px 13px;
+    margin-bottom: 6px;
+}
+
+
+/* Sidebar link hover and active state */
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background: #0d3d86;
+    color: #ffffff;
+}
+
+/* Main dashboard content */
+.dashboard-main {
+    padding: 30px;
+}
+
+/* Dashboard action cards */
+.dashboard-card {
+    padding: 24px;
+    height: 100%;
+    text-align: center;
+}
+
+.dash-icon {
+    margin: auto;
+}
+
+/* Container around tables */
+.table-card {
+    padding: 20px;
+}
+
+.table thead th {
+    background: #f1f5fb;
+    color: #253957;
+    white-space: nowrap;
+}
+
+
+/* Vertically center table content */
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.price {
+    font-weight: 700;
+    color: #08285f;
+}
+
+.qty {
+    background: #e7f7ee;
+    color: #157546;
+}
+
+/* Website footer */
+.footer {
+    background: #061d46;
+    color: #ffffff;
+    padding: 22px 0;
+}
+
+/* Profile card maximum width */
+.profile-card {
+    max-width: 900px;
+}
+
+/* Icon used on success message page */
+.message-icon {
+    font-size: 3.2rem;
+    color: #15965a;
+}
+
+/* Empty cart message area */
+.empty-cart {
+    padding: 50px 10px;
+    text-align: center;
+    color: #6c7a90;
+}
+
+.empty-cart i {
+    font-size: 3rem;
+    /* Put icon on separate line */
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Apply these styles when screen width is 991px or less */
+@media (max-width: 991px) {
+
+    /* Add more space around hero section */
+    .hero {
+        padding: 70px 0;
+    }
+
+    /* Reduce book image size on smaller screens */
+    .book-illustration {
+        font-size: 6rem;
+    }
+
+    /* Sidebar should not occupy full screen height */
+    .sidebar {
+        min-height: auto;
+    }
+
+    /* Reduce dashboard padding on small screens */
+    .dashboard-main {
+        padding: 22px 15px;
+    }
+    
+     .about-header h1 {
+
+        font-size: 2.2rem;
+    }
+    .about-main-icon {
+
+        font-size: 3.2rem;
+    }
+    .about-book-box {
+
+        padding: 40px 20px;
+    }
+    .about-book-box i {
+        font-size: 4.5rem;
+    }
+    .mission-card {
+        padding: 30px 20px;
+    }
+}
