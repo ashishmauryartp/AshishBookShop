@@ -240,6 +240,6 @@ The Oracle JDBC JAR is intentionally not included in this GitHub-ready folder. A
 
 Database credentials and generated `.class` files are intentionally excluded from the GitHub repository.
 
-## Author
+## Developed By
 
 **Ashish Maurya**
